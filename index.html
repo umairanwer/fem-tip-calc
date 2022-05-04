@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="images/logo.svg" alt="logo" class="program-name">
+  </header>
+
+  <main class="main-container">
+    <div class="input-section">
+    <h1>Bill</h1>
+    <div class="bill-input">
+      <img src="images/icon-dollar.svg" alt="dollar sign">
+      <input type="text" id="bill" class="text-inputs"/>
+    </div>
+
+    <h1>Select Tip %</h1>
+    <div class="tip-selectors">
+      <button id="five-pc" value="5" class="activeBtn">5%</button>
+      <button id="10pc" value="10">10%</button>
+      <button id="15pc" value="15">15%</button>
+      <button id="25pc" value="25">25%</button>
+      <button id="50pc" value="50">50%</button>
+      <input type="text" id="custom-tip" placeholder="Custom"class="text-inputs"/>
+    </div>
+    <div class="num-people-hdgs"> 
+      <h1>Number of People</h1>
+      <p class="zero-error">Can't be zero</p>
+    </div>
+
+    <div class="num-people-input-con">
+      <input type="text" id="num-people" value="1" class="text-inputs"/>
+      <img src="images/icon-person.svg" alt="person sign">
+    </div>
+    </div>
+    <div class="result-container result-section">
+      <div class="result-grid">
+        <div>
+          <h1>Tip Amount</h1>
+          <p>/ person</p>
+        </div>
+        <h2 id="tip-value">$0</h2>
+
+        <div>
+          <h1>Total</h1>
+          <p>/ person</p>
+        </div>
+        <h2 id="total-value">$0</h2>
+        </div>
+      <button class="reset-btn">RESET</button> 
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/umairanwer">Umair</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
